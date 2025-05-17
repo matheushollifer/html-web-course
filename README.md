@@ -77,7 +77,7 @@ code .
 Você pode acessar uma versão online deste projeto (caso o GitHub Pages esteja ativado) no seguinte endereço:
 
 ```
-https://seu-usuario.github.io/html-web-course/
+https://matheushollifer.github.io/html-web-course/
 ```
 
 ---
