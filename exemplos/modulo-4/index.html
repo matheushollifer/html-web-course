@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exemplo prático do Módulo 4 – Formulários e Interatividade">
+  <title>Módulo 4 – Formulários</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f0f0f0;
+    }
+    form {
+      background-color: #fff;
+      padding: 1.5rem;
+      border: 1px solid #ccc;
+      max-width: 500px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      box-sizing: border-box;
+    }
+    fieldset {
+      border: 1px solid #aaa;
+      margin-top: 2rem;
+      padding: 1rem;
+    }
+    legend {
+      font-weight: bold;
+    }
+    input[type="submit"] {
+      margin-top: 1.5rem;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulário de Cadastro</h1>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required aria-required="true">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="senha">Senha (min. 6 caracteres):</label>
+      <input type="password" id="senha" name="senha" minlength="6" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+      <label for="curso">Curso de interesse:</label>
+      <select id="curso" name="curso">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+      </select>
+
+      <label for="nascimento">Data de nascimento:</label>
+      <input type="date" id="nascimento" name="nascimento">
+
+      <label for="cor">Cor favorita:</label>
+      <input type="color" id="cor" name="cor">
+
+      <label for="nivel">Nível de satisfação com HTML:</label>
+      <input type="range" id="nivel" name="nivel" min="0" max="10">
+
+      <input type="submit" value="Enviar">
+    </fieldset>
+  </form>
+</body>
+</html>
