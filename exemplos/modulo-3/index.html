@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exemplo prático do Módulo 3 – Estrutura e Layout">
+  <title>Módulo 3 – Estrutura e Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+    .secao {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+    }
+    .destaque {
+      color: darkred;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    thead {
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <div class="secao">
+    <h1>Uso de div e span</h1>
+    <p>Essa seção está dentro de uma <code>&lt;div&gt;</code>. O valor total é <span class="destaque">R$ 99,00</span>.</p>
+  </div>
+
+  <hr>
+
+  <div class="secao">
+    <h2>Quebras e Separadores</h2>
+    <p>Linha 1<br>Linha 2 (após a quebra de linha)</p>
+    <hr>
+    <p>Nova seção após separador horizontal.</p>
+  </div>
+
+  <div class="secao">
+    <h2>Tabela de Produtos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Teclado</td>
+          <td>R$ 120,00</td>
+        </tr>
+        <tr>
+          <td>Monitor</td>
+          <td>R$ 899,00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Valores referentes ao mês de maio.</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</body>
+</html>
