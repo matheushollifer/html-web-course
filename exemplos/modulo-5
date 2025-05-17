@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exemplo prático do Módulo 5 – Boas Práticas e PWA">
+  <title>Módulo 5 – Boas Práticas</title>
+  <link rel="manifest" href="manifest.json">
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f2f2f2;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #1a73e8;
+    }
+    code {
+      background: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Boas Práticas no Projeto</h1>
+    <ul>
+      <li>Utilize estrutura organizada: <code>css/</code>, <code>js/</code>, <code>assets/</code>.</li>
+      <li>Imagens otimizadas (use <code>.webp</code> quando possível).</li>
+      <li>Adicione <code>defer</code> para carregar scripts sem bloquear a página.</li>
+      <li>Use <code>&lt;meta name="viewport"&gt;</code> para responsividade.</li>
+    </ul>
+
+    <h2>Exemplo de Estrutura de Diretório</h2>
+    <pre>
+projeto/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── icons/
+│   └── icon-192.png
+└── manifest.json
+    </pre>
+
+    <h2>Progressive Web App (PWA)</h2>
+    <p>Este projeto utiliza um <strong>manifest.json</strong> e um <strong>service worker</strong> para funcionar offline.</p>
+  </div>
+</body>
+</html>
